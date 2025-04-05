@@ -1,0 +1,18 @@
+{
+    "name": "chatapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon backend/src/server.js",
+        "start": "node backend/src/server.js",
+        "build": "npm run build-backend && npm run build-frontend",
+        "build-frontend": "npm install --prefix frontend && npm run build --prefix frontend",
+        "build-backend": "npm install --prefix backend",
+        "deploy": "npm run build && npm start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs"
+}
